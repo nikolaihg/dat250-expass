@@ -35,3 +35,18 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Docker
+docker-compose.override.yml
+Dockerfile*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
