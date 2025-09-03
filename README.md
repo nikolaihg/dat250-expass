@@ -10,4 +10,7 @@ on push to main, the action runs tests and builds the application.
   - `docker compose up --build -d` Running detached
   - `docker compose up` /-d after building
   - `docker compose down` shutdown
+- Dockerhub
+  - See branch dockerhub & `dockerhub.yml`
+  - so far it does not work
 ### Expass 2
