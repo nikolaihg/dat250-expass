@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @SpringJUnitConfig
-class PollBackendApplicationTests {
+class ApplicationTest {
 
 	@LocalServerPort
 	private int port;
@@ -29,7 +29,7 @@ class PollBackendApplicationTests {
 		ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
 
 		assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
-		assertThat(response.getBody()).isEqualTo("Hello World");
+		assertThat(response.getBody()).isEqualTo("App is running");
 	}
 
 	@Test

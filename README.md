@@ -1,6 +1,8 @@
 # dat250-expass
-
-## notes
+## Assigments
+- [expass1](screenshots/expass1/Screenshot%202025-08-29%20172414.png)
+- [expass2](dat250-expass2.md)
+## Notes
 ### Expass 1
 - `.github/workflows/ci.yml`  
 on push to main, the action runs tests and builds the application.
@@ -12,5 +14,7 @@ on push to main, the action runs tests and builds the application.
   - `docker compose down` shutdown
 - Dockerhub
   - See branch dockerhub & `dockerhub.yml`
-  - so far it does not work
+  - You can dockerize, but dockerhub github action fails in hub buildx.
 ### Expass 2
+- `model` contains beans
+- `manager` contains `PollManager.java`

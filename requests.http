@@ -1,0 +1,87 @@
+# Test scenario for Polling Application - Assignment Step 3
+# Use with REST Client extension in VS Code or similar HTTP client tools
+
+### 1. Create user 1 (Alice)
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "id": 0,
+  "username": "alice",
+  "email": "alice@example.com"
+}
+
+### 2. List users
+GET http://localhost:8080/api/users
+
+### 3. Create user 2 (Bob)
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "id": 0,
+  "username": "bob",
+  "email": "bob@example.com"
+}
+
+### 4. List users (should show two)
+GET http://localhost:8080/api/users
+
+### 5. User 1 creates a poll
+POST http://localhost:8080/api/polls
+Content-Type: application/json
+
+{
+  "question": "Which color?",
+  "publishedAt": null,
+  "validUntil": null,
+  "createdByUserId": 1
+}
+
+### 6a. Add option 1 to poll (assuming pollId is 1)
+POST http://localhost:8080/api/polls/1/options
+Content-Type: application/json
+
+{
+  "caption": "Red",
+  "presentationOrder": 1
+}
+
+### 6b. Add option 2 to poll
+POST http://localhost:8080/api/polls/1/options
+Content-Type: application/json
+
+{
+  "caption": "Blue",
+  "presentationOrder": 2
+}
+
+### 7. List polls
+GET http://localhost:8080/api/polls
+
+### 8. User 2 votes for option 2
+POST http://localhost:8080/api/polls/1/votes
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "voteOptionId": 2
+}
+
+### 9. User 2 changes vote to option 1
+POST http://localhost:8080/api/polls/1/votes
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "voteOptionId": 1
+}
+
+### 10. List votes (should show latest vote for user 2)
+GET http://localhost:8080/api/polls/1/votes
+
+### 11. Delete the poll
+DELETE http://localhost:8080/api/polls/1
+
+### 12. List votes (should be empty because deletion removed associated votes)
+GET http://localhost:8080/api/polls/1/votes
