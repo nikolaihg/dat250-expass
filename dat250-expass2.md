@@ -27,7 +27,7 @@ I created a [requests.http](requests.http) file containing all the required test
   - Vote options: `/api/polls/{pollId}/options` and `/api/options/{optionId}` 
   - Votes: `/api/polls/{pollId}/votes`
 - Ran the http test from step 3 and it worked like a charm.
-![requests.http.png](screenshots\expass2\requests.png)
+![requests.png](/screenshots/expass2/requests.png)
 
 ### Step 5: Automate testing
 - Created the test: `src/test/IntegrationTest` that runs the scenario from step 3.
