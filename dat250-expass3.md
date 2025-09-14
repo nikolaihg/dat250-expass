@@ -17,14 +17,14 @@ I created three components: `CreateUser.svelte`, `CreatePoll.svelte`, `Vote.svel
 - Implemented fetching.
 - Showcase:  
 #### Create User:   
-![screenshots\expass3\user.png](screenshots\expass3\user.png)
-![screenshots\expass3\listusers.png](screenshots\expass3\listusers.png)
+[screenshots\expass3\user.png](screenshots\expass3\user.png)
+[screenshots\expass3\listusers.png](screenshots\expass3\listusers.png)
 #### Create Poll:
-![screenshots\expass3\poll.png](screenshots\expass3\poll.png)
-![screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
+[screenshots\expass3\poll.png](screenshots\expass3\poll.png)
+[screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
 #### Vote on poll:  
-![screenshots\expass3\vote.png](screenshots\expass3\vote.png)
-![screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
+[screenshots\expass3\vote.png](screenshots\expass3\vote.png)
+[screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
 ### Step 5
 - Built the page and copied. Did not have time to integrate it into the same repo (`\frontend` and `\backend`) so no automate build using gradle.
 ### Step 6

@@ -5,4 +5,4 @@
 - [expass1](dat250-expass1.md)
   - [screenshot](screenshots/expass1/Screenshot%202025-08-29%20172414.png)
 - [expass2](dat250-expass2.md)
-- [expass3](https://github.com/nikolaihg/dat250-expass-frontend)
+- [expass3](dat250-expass3.md)
