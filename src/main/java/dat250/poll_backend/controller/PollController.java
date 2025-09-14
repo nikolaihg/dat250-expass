@@ -10,13 +10,13 @@ import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/polls")
 public class PollController {
     private final PollManager pm;
     public PollController(PollManager pm) { this.pm = pm; }
 
-    // create: client sends question, validUntil (optional), createdByUserId
     public static class CreatePollRequest {
         public String question;
         public Instant publishedAt;

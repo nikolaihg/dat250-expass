@@ -9,9 +9,9 @@ public class Poll {
     private String question;
     private Instant publishedAt;
     private Instant validUntil;
-    private long createdByUserId; // store creator by id
-    private List<Long> voteOptionIds = new ArrayList<>(); // IDs of VoteOptions
-    private List<Long> voteIds = new ArrayList<>(); // IDs of Votes
+    private long createdByUserId;
+    private List<Long> voteOptionIds = new ArrayList<>();
+    private List<Long> voteIds = new ArrayList<>();
 
     public Poll() {}
     public Poll(long id, String question, Instant publishedAt, Instant validUntil, long createdByUserId) {

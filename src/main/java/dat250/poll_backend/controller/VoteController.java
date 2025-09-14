@@ -10,6 +10,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/polls/{pollId}/votes")
 public class VoteController {

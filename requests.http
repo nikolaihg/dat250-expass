@@ -77,7 +77,7 @@ Content-Type: application/json
   "voteOptionId": 1
 }
 
-### 10. List votes (should show latest vote for user 2)
+### 10. List votes
 GET http://localhost:8080/api/polls/1/votes
 
 ### 11. Delete the poll
