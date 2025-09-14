@@ -6,7 +6,7 @@
 ## Link to code: 
 [github.com/nikolaihg/dat250-expass-frontend](https://github.com/nikolaihg/dat250-expass-frontend)
 ## Report
-I chose svelte as my framework. I have worked a lot with react, next.js and typescript, so I chose to use typescript with svelte.
+I chose svelte as my framework. I have worked a lot with react, next.js and typescript. But I chose to use typescript with svelte to learn a new technology.
 ### Step 1
 I choose to use pnpm while developing, because its faster (not that this project has very many dependencies), but its what I am used to when I have using react.
 ### Step 2
@@ -14,15 +14,15 @@ I created three components: `CreateUser.svelte`, `CreatePoll.svelte`, `Vote.svel
 ### Step 3
 - Annotated each of the four controllers with `@CrossOrigin`
 ### Step 4
-- Implemented fetching.
-- Showcase:  
-#### Create User:   
+- Implemented fetching. 
+#### Showcase:  
+##### Create User:   
 [screenshots\expass3\user.png](screenshots\expass3\user.png)
 [screenshots\expass3\listusers.png](screenshots\expass3\listusers.png)
-#### Create Poll:
+##### Create Poll:
 [screenshots\expass3\poll.png](screenshots\expass3\poll.png)
 [screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
-#### Vote on poll:  
+##### Vote on poll:  
 [screenshots\expass3\vote.png](screenshots\expass3\vote.png)
 [screenshots\expass3\listpolls.png](screenshots\expass3\listpolls.png)
 ### Step 5
