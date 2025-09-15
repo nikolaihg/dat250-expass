@@ -1,1 +1,3 @@
-rootProject.name = "poll-backend"
+rootProject.name = "pollapp"
+include("backend")
+include("frontend")
