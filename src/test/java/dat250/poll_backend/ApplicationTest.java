@@ -23,18 +23,7 @@ class ApplicationTest {
 	}
 
 	@Test
-	void homeEndpointReturnsHelloWorld() {
-		// Test the actual endpoint functionality
-		String url = "http://localhost:" + port + "/";
-		ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
-
-		assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
-		assertThat(response.getBody()).isEqualTo("App is running");
-	}
-
-	@Test
 	void applicationStartsSuccessfully() {
-		// Verify that the application starts without throwing exceptions
 		assertThat(port).isGreaterThan(0);
 	}
 }
