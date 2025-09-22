@@ -1,6 +1,7 @@
 # dat250-expass
 - shared repo for all the backend expass deliveries by me. That builds on springboot+java poll app.
 - See [nikolaihg/dat250-expass-frontend](https://github.com/nikolaihg/dat250-expass-frontend) for the orginal frontend repo (now also moved to this repo).
+- See [nikolaihg/dat250-expass4](https://github.com/nikolaihg/dat250-expass4) for the code for assignment 4.
 
 ## Project Structure
 - `backend/` - Spring Boot REST API
