@@ -14,10 +14,17 @@ Link to code: https://github.com/nikolaihg/dat250-expass4
 - `Vote.java`: Added JPA annotations for the voting relationship
 
 ### Step 2
-- 
+- Ran `Pollstest`.java and the three test passed.
+- I changes the h2 properties to:  
+```.property(PersistenceConfiguration.JDBC_URL,
+          "jdbc:h2:file:C:/Users/nikol/Documents/_Master/DAT250/expass4/dat250-expass4/pollsdb")
+```
+so that i could view the database after running the tests.
+
 ### Technical problems
 - After updating the entities with methods and JPA annotations, I still had the error "Cannot resolve symbol 'PersistenceConfiguration'" in `PollsTest.java`:
     - ![error](.\screenshots\expass4\img.png)
-- I tried makin a brand new gralde project to fix this proplem 
+    - After tinkering for a while with the existing project, I tried to make a brand new one using gradle init.
+        - After doing this, and copying my files from the previous project, all three test passes. 
 
 
