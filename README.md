@@ -39,7 +39,8 @@ npm run dev
 ```
 
 ## Assigments
-- [expass1](dat250-expass1.md)
+- [expass1.md](dat250-expass1.md)
   - [screenshot](screenshots/expass1/Screenshot%202025-08-29%20172414.png)
-- [expass2](dat250-expass2.md)
-- [expass3](dat250-expass3.md)
+- [expass2.md](dat250-expass2.md)
+- [expass3.md](dat250-expass3.md)
+- [expass4.md](dat250-expass4.md)
