@@ -1,5 +1,5 @@
 package dat250.poll_backend.manager;
-
+/*
 import dat250.poll_backend.domain.Poll;
 import dat250.poll_backend.domain.User;
 import dat250.poll_backend.domain.Vote;
@@ -122,3 +122,4 @@ public class PollManager {
         userCounter = pollCounter = optionCounter = voteCounter = 0;
     }
 }
+ */

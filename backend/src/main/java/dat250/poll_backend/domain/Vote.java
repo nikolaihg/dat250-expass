@@ -1,30 +1,39 @@
 package dat250.poll_backend.domain;
 
+import jakarta.persistence.*;
 import java.time.Instant;
 
+@Entity
+@Table(name = "votes")
 public class Vote {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long pollId;
-    private long userId;
-    private long voteOptionId;
+
+    @Column(nullable = false)
     private Instant publishedAt;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "voted_by_id")
+    private User votedBy;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "votes_on_id")
+    private VoteOption votesOn;
+
     public Vote() {}
-    public Vote(long id, long pollId, long userId, long voteOptionId, Instant publishedAt) {
-        this.id = id; this.pollId = pollId; this.userId = userId; this.voteOptionId = voteOptionId; this.publishedAt = publishedAt;
+    public Vote(Instant publishedAt) {
+        this.publishedAt = publishedAt;
     }
 
     public long getId() { return id; }
     public void setId(long id) { this.id = id; }
 
-    public long getPollId() { return pollId; }
-    public void setPollId(long pollId) { this.pollId = pollId; }
+    public User getVotedBy() { return votedBy; }
+    public void setVotedBy(User votedBy) { this.votedBy = votedBy; }
 
-    public long getUserId() { return userId; }
-    public void setUserId(long userId) { this.userId = userId; }
-
-    public long getVoteOptionId() { return voteOptionId; }
-    public void setVoteOptionId(long voteOptionId) { this.voteOptionId = voteOptionId; }
+    public VoteOption getVotesOn() { return votesOn; }
+    public void setVotesOn(VoteOption votesOn) { this.votesOn = votesOn; }
 
     public Instant getPublishedAt() { return publishedAt; }
     public void setPublishedAt(Instant publishedAt) { this.publishedAt = publishedAt; }

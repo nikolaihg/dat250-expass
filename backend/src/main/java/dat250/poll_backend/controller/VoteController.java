@@ -1,5 +1,5 @@
 package dat250.poll_backend.controller;
-
+/*
 import dat250.poll_backend.domain.Vote;
 import dat250.poll_backend.dto.VoteDto;
 import dat250.poll_backend.manager.PollManager;
@@ -35,3 +35,4 @@ public class VoteController {
                 .collect(Collectors.toList());
     }
 }
+*/

@@ -1,5 +1,5 @@
 package dat250.poll_backend.controller;
-
+/*
 import dat250.poll_backend.domain.Poll;
 import dat250.poll_backend.dto.PollDto;
 import dat250.poll_backend.manager.PollManager;
@@ -44,3 +44,4 @@ public class PollController {
         return ok ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
 }
+ */

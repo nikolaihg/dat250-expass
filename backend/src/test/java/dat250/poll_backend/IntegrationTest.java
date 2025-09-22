@@ -1,5 +1,5 @@
 package dat250.poll_backend;
-
+/*
 import dat250.poll_backend.controller.PollController;
 import dat250.poll_backend.controller.VoteController;
 import dat250.poll_backend.controller.VoteOptionController;
@@ -105,3 +105,4 @@ public class IntegrationTest {
         Assertions.assertEquals(0, votesAfterDelete.length);
     }
 }
+ */

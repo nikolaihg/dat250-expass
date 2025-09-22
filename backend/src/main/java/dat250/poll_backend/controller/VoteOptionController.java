@@ -1,5 +1,5 @@
 package dat250.poll_backend.controller;
-
+/*
 import dat250.poll_backend.domain.VoteOption;
 import dat250.poll_backend.dto.VoteOptionDto;
 import dat250.poll_backend.manager.PollManager;
@@ -39,3 +39,4 @@ public class VoteOptionController {
         return ok ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
 }
+*/
